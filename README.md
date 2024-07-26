@@ -1,1 +1,7 @@
-# endometrial-adenocarcinoma
+# Endometrial Adenocarcinoma
+Created a deep learning system which diagnoses Endometrial Adenocarcinoma using Histopathological Images of the endometrium. I achieved an accuracy of 96% and training loss of 0.21. The dataset was provided by figshare (link: https://figshare.com/articles/dataset/A_histopathological_image_dataset_for_endometrial_disease_diagnosis/7306361/2). The dataset has a total of 3302 pathologically proved images of the endometrium. Here is the following paper which describes the dataset (remember to cite if you use the dataset): 
+
+Hao Sun, Xianxu Zeng, Tao Xu, Gang Peng, and Yutao Ma, "Computer-Aided Diagnosis in Histopathological Images of the Endometrium Using a Convolutional Neural Network and Attention Mechanisms," IEEE Journal of Biomedical and Health Informatics, 2020, 24(6): 1664-1676.
+
+# FastAI Integration
+I used FastAI to create the deep learning system. FastAI is a deep learning library which allows for transfer learning and other components to be created with high accuracy and less amounts of code. For example, FastAI is able to apply different pretrained models with just one line of code. In the case of Endometrial Adenocarcinoma, I used the pretrained ResNet50 model. I added the following hyperparameters: BATCH_SIZE=64, LR=1e-3, NUM_EPOCHS=10, VALID_PCT=0.2. I will train it on the VGG16, DenseNet201, and InceptionNet_V3. I have measured how good the model was using Accuracy, Precision, Recall, and F1 Scores. A confusion matrix and the top losses were provided. In the future, I hope to add an IoT-based system to this deep learning system and publish a paper. 
